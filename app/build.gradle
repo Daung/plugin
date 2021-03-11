@@ -5,11 +5,10 @@ plugins {
 apply plugin: 'com.yiban.plugin'
 
 encode {
-    encode_path = rootDir.getAbsolutePath() + "/plugin/encryption"
+    encode_path = rootDir.getAbsolutePath() + "/app/src/main/assets"
     decode_path =  rootDir.getAbsolutePath()+ "/plugin/encryption"
     encode_file_name = 'encode'
     decode_file_name = 'decode'
-
 }
 
 android {
