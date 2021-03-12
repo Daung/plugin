@@ -31,15 +31,15 @@ uploadArchives {
         mavenDeployer {
 
             //本地的Maven地址设置为../repos
-            repository(url: uri('../repo'))
+//            repository(url: uri('../repo'))
             //远程的Maven地址设置为../repos
-//            repository(url: "http://10.21.177.81:8081/nexus/content/repositories/releases/") {
-//                authentication(userName: "maven_dev", password: "maven")
-//            }
+            repository(url: "http://10.21.177.81:8081/nexus/content/repositories/releases/") {
+                authentication(userName: "maven_dev", password: "maven")
+            }
             //设置插件的GAV参数
             pom.groupId = 'com.yiban.plugin'
             pom.artifactId = 'EncryPlugin'
-            pom.version = '1.0.1'
+            pom.version = '1.0.2'
         }
     }
 }
