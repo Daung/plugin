@@ -30,10 +30,17 @@ public class MainActivity extends AppCompatActivity {
     private static final String key = "yibanEncryPlugin";
     private static final String TAG = "MainActivity";
 
+
+   static String[] names ={"aaa","bbb"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
+
         findViewById(R.id.tv_content).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
